@@ -576,7 +576,7 @@
           title: 'Web-Based Order Processing System',
           description: 'Full-stack app modernizing wholesale produce order workflows. Features OAuth2 via Google Cloud, role-based permissions, real-time order updates, automated PDF generation, and planned QuickBooks API integration.',
           tags: ['Java', 'Spring Boot', 'Vue.js', 'Vuetify', 'PostgreSQL', 'Google Cloud', 'OAuth2'],
-          link: 'https://github.com/jiovinejr/YOUR_REPO',
+          link: 'https://github.com/jiovinejr/ShipFullStack',
           type: 'Full-Stack App',
           wip: true
         },
@@ -584,7 +584,7 @@
           title: 'QR Code Referral Signup System',
           description: 'Referral tracking system using unique per-member QR codes linking to a shared signup form. A Netlify serverless function proxies Mailchimp API calls, embedding team attribution at the point of signup.',
           tags: ['JavaScript', 'HTML/CSS', 'Netlify', 'Serverless Functions', 'Mailchimp API'],
-          link: 'https://github.com/jiovinejr/YOUR_REPO',
+          link: 'https://github.com/jiovinejr/iovine-signup-form',
           type: 'Web App',
           wip: false
         },
@@ -592,18 +592,34 @@
           title: 'Automated Order Processing System',
           description: '2,000+ lines of code automating wholesale produce orders: item name refinement, case-quantity breakdowns, and label generation via the Brother printer SDK. Delivered a 30% productivity increase.',
           tags: ['Python', 'VBA', 'Excel', 'Gmail API', 'Google Drive API', 'Brother SDK'],
-          link: 'https://github.com/jiovinejr/YOUR_REPO',
+          link: 'https://github.com/jiovinejr/VBAOrderProcessing',
           type: 'Automation',
+          wip: false
+        },
+        {
+          title: 'AssetTrack — Equipment Management System',
+          description: 'Internal asset management tool built for a produce warehouse. Equipment is tagged with QR code labels that open a live asset page directly in any phone camera — no app needed. Tracks warranties, service dates, condition, and location. Admin panel handles full CRUD via Firebase Firestore.',
+          tags: ['JavaScript', 'HTML/CSS', 'Firebase', 'Firestore', 'Firebase Hosting'],
+          link: 'https://github.com/jiovinejr/assettrack',
+          type: 'Web App',
           wip: false
         },
         {
           title: 'Restaurant Cleaning Log App',
           description: 'Full-stack cleaning log system built on Google Apps Script and Sheets. Features multi-level category drill-down, real-time photo upload, and an automated pipeline for email alerts and weekly summary reports.',
           tags: ['Google Apps Script', 'Google Sheets', 'Google Drive', 'JavaScript', 'Bootstrap'],
-          link: 'https://github.com/jiovinejr/YOUR_REPO',
+          link: 'https://github.com/jiovinejr/cleanup-log',
           type: 'Web App',
           wip: false
-        }
+        },
+        {
+          title: 'PokéContainer',
+          description: 'Containerized Flask app that fetches a random Gen 1 Pokémon from the PokéAPI and serves it through a custom frontend. Built to practice the full container workflow — Dockerfile, Google Container Registry, and Cloud Run deployment. CI pipeline runs lint and tests on every push via GitHub Actions.',
+          tags: ['Python', 'Flask', 'Docker', 'Google Cloud Run', 'GitHub Actions', 'REST API'],
+          link: 'https://github.com/jiovinejr/poke-container',
+          type: 'Cloud / Container',
+          wip: false
+        },
       ]);
 
       const skillCategories = ref([
@@ -613,7 +629,7 @@
         },
         {
           title: 'Frameworks & Platforms',
-          skills: ['Spring Boot', 'Vue.js', 'Vuetify', 'Google Apps Script', 'Netlify', 'Google Cloud']
+          skills: ['Spring Boot', 'React.js', 'Vue.js', 'Vuetify', 'Google Apps Script', 'Netlify', 'Google Cloud']
         },
         {
           title: 'Databases & APIs',
