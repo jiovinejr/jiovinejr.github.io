@@ -232,7 +232,6 @@
       border: 1px solid var(--border);
       border-radius: 10px;
       padding: 1.75rem;
-      text-decoration: none;
       display: flex;
       flex-direction: column;
       transition: border-color 0.2s, transform 0.25s;
@@ -507,12 +506,9 @@
       <p class="section-label">Selected Work</p>
       <h2 class="section-heading">Projects.</h2>
       <div class="projects-grid">
-        <a
+        <div
           v-for="(project, i) in projects"
           :key="project.title"
-          :href="project.link"
-          target="_blank"
-          rel="noopener noreferrer"
           class="project-card reveal"
           :class="'d' + (i % 3)"
         >
@@ -523,7 +519,7 @@
             <span class="tag" v-for="tag in project.tags" :key="tag">{{ tag }}</span>
           </div>
           <div class="project-footer">
-            <span class="project-link-text">View on GitHub &rarr;</span>
+            <a :href="project.link" target="_blank" rel="noopener noreferrer" class="project-link-text">View on GitHub &rarr;</a>
             <div style="display:flex;align-items:center;gap:0.75rem">
               <a
                 v-if="project.demo"
@@ -531,12 +527,11 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 class="demo-link"
-                @click.stop
               >Live Demo</a>
               <span class="project-type">{{ project.type }}</span>
             </div>
           </div>
-        </a>
+        </div>
       </div>
     </section>
   </div>
