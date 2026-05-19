@@ -511,7 +511,17 @@
           </div>
           <div class="project-footer">
             <span class="project-link-text">View on GitHub →</span>
-            <span class="project-type">{{ project.type }}</span>
+            <div style="display:flex;align-items:center;gap:0.75rem">
+              <a
+                v-if="project.demo"
+                :href="project.demo"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="demo-link"
+                @click.stop
+              >Live Demo ↗</a>
+              <span class="project-type">{{ project.type }}</span>
+            </div>
           </div>
         </a>
       </div>
@@ -577,6 +587,7 @@
           description: 'Full-stack app modernizing wholesale produce order workflows. Features OAuth2 via Google Cloud, role-based permissions, real-time order updates, automated PDF generation, and planned QuickBooks API integration.',
           tags: ['Java', 'Spring Boot', 'Vue.js', 'Vuetify', 'PostgreSQL', 'Google Cloud', 'OAuth2'],
           link: 'https://github.com/jiovinejr/ShipFullStack',
+          demo: null,
           type: 'Full-Stack App',
           wip: true
         },
@@ -585,6 +596,7 @@
           description: 'Referral tracking system using unique per-member QR codes linking to a shared signup form. A Netlify serverless function proxies Mailchimp API calls, embedding team attribution at the point of signup.',
           tags: ['JavaScript', 'HTML/CSS', 'Netlify', 'Serverless Functions', 'Mailchimp API'],
           link: 'https://github.com/jiovinejr/iovine-signup-form',
+          demo: 'https://signup.iovine.com/?ref=jr-portfolio'
           type: 'Web App',
           wip: false
         },
@@ -593,6 +605,7 @@
           description: '2,000+ lines of code automating wholesale produce orders: item name refinement, case-quantity breakdowns, and label generation via the Brother printer SDK. Delivered a 30% productivity increase.',
           tags: ['Python', 'VBA', 'Excel', 'Gmail API', 'Google Drive API', 'Brother SDK'],
           link: 'https://github.com/jiovinejr/VBAOrderProcessing',
+          demo: null,
           type: 'Automation',
           wip: false
         },
@@ -601,6 +614,7 @@
           description: 'Internal asset management tool built for a produce warehouse. Equipment is tagged with QR code labels that open a live asset page directly in any phone camera — no app needed. Tracks warranties, service dates, condition, and location. Admin panel handles full CRUD via Firebase Firestore.',
           tags: ['JavaScript', 'HTML/CSS', 'Firebase', 'Firestore', 'Firebase Hosting'],
           link: 'https://github.com/jiovinejr/assettrack',
+          demo: 'https://assets.iovine.com/asset/AST-TEST'
           type: 'Web App',
           wip: false
         },
@@ -609,6 +623,7 @@
           description: 'Full-stack cleaning log system built on Google Apps Script and Sheets. Features multi-level category drill-down, real-time photo upload, and an automated pipeline for email alerts and weekly summary reports.',
           tags: ['Google Apps Script', 'Google Sheets', 'Google Drive', 'JavaScript', 'Bootstrap'],
           link: 'https://github.com/jiovinejr/cleanup-log',
+          demo: null,
           type: 'Web App',
           wip: false
         },
@@ -617,6 +632,7 @@
           description: 'Containerized Flask app that generates expiration labels for restaurant food prep. Staff search a live item database, preview a to-scale 2×2 inch label with auto-calculated expiration dates, and can add or edit items on the fly. Rebuilt from a working Google Apps Script production app to demonstrate a portable, version-controlled stack. Deployed on Cloud Run with a self-seeding SQLite database.',
           tags: ['Python', 'Flask', 'Docker', 'Google Cloud Run', 'SQLite'],
           link: 'https://github.com/jiovinejr/rc-labels',
+          demo: 'https://rc-labels-572460024219.us-east1.run.app',
           type: 'Cloud / Container',
           wip: false
         },
@@ -625,6 +641,7 @@
           description: 'Containerized Flask app that fetches a random Gen 1 Pokémon from the PokéAPI and serves it through a custom frontend. Built to practice the full container workflow — Dockerfile, Google Container Registry, and Cloud Run deployment. CI pipeline runs lint and tests on every push via GitHub Actions.',
           tags: ['Python', 'Flask', 'Docker', 'Google Cloud Run', 'GitHub Actions', 'REST API'],
           link: 'https://github.com/jiovinejr/poke-container',
+          demo: 'https://poke-container-572460024219.us-east1.run.app',
           type: 'Cloud / Container',
           wip: false
         },
