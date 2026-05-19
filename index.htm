@@ -297,7 +297,22 @@
       border-top: 1px solid var(--border);
     }
 
-    .project-link-text {
+    .demo-link {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      color: var(--accent);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid var(--accent-border);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      transition: background 0.2s;
+    }
+
+    .demo-link:hover { background: var(--accent-dim); }
+
+
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.68rem;
       color: var(--accent);
@@ -581,7 +596,7 @@
   createApp({
     setup() {
 
-      const projects = ref([
+const projects = ref([
         {
           title: 'Web-Based Order Processing System',
           description: 'Full-stack app modernizing wholesale produce order workflows. Features OAuth2 via Google Cloud, role-based permissions, real-time order updates, automated PDF generation, and planned QuickBooks API integration.',
@@ -654,7 +669,7 @@
         },
         {
           title: 'Frameworks & Platforms',
-          skills: ['Spring Boot', 'React.js', 'Vue.js', 'Vuetify', 'Google Apps Script', 'Netlify', 'Google Cloud']
+          skills: ['Spring Boot', 'Vue.js', 'Vuetify', 'Google Apps Script', 'Netlify', 'Google Cloud']
         },
         {
           title: 'Databases & APIs',
