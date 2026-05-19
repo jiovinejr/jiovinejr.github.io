@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>James Iovine — Developer</title>
+  <title>James Iovine &mdash; Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Syne:wght@600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
@@ -71,9 +71,7 @@
     .nav-links a:hover { color: var(--accent); }
 
     .page { max-width: 1100px; margin: 0 auto; padding: 0 3rem; }
-
     .section { padding: 6rem 0; }
-
     .divider { height: 1px; background: var(--border); }
 
     .section-label {
@@ -297,6 +295,14 @@
       border-top: 1px solid var(--border);
     }
 
+    .project-link-text {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      color: var(--accent);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
     .demo-link {
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.68rem;
@@ -311,14 +317,6 @@
     }
 
     .demo-link:hover { background: var(--accent-dim); }
-
-    .project-link-text {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.68rem;
-      color: var(--accent);
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
 
     .project-type {
       font-family: 'JetBrains Mono', monospace;
@@ -452,15 +450,15 @@
 
   <div class="page">
     <section id="hero">
-      <p class="hero-eyebrow">// Solutions Developer · Philadelphia, PA</p>
+      <p class="hero-eyebrow">// Solutions Developer &middot; Philadelphia, PA</p>
       <h1 class="hero-name">
         Building tools<br>that actually <span class="accent">work.</span>
       </h1>
       <p class="hero-tagline">
-        I design and develop practical web applications and automation systems — clean code, real results, no unnecessary complexity.
+        I design and develop practical web applications and automation systems &mdash; clean code, real results, no unnecessary complexity.
       </p>
       <div class="hero-ctas">
-        <a href="#projects" class="btn-primary">See My Work →</a>
+        <a href="#projects" class="btn-primary">See My Work &rarr;</a>
         <a href="#contact" class="btn-secondary">Get In Touch</a>
         <a href="https://github.com/jiovinejr" target="_blank" rel="noopener" class="btn-secondary">GitHub</a>
       </div>
@@ -478,14 +476,14 @@
         </div>
         <div class="reveal">
           <p class="about-text">
-            I'm a solutions developer based in Philadelphia with a background in operations and a passion for building tools that make real work easier. I went from managing a high-volume restaurant to writing production software — because I kept finding inefficiencies that code could fix.
+            I'm a solutions developer based in Philadelphia with a background in operations and a passion for building tools that make real work easier. I went from managing a high-volume restaurant to writing production software &mdash; because I kept finding inefficiencies that code could fix.
           </p>
           <p class="about-text">
-            My work spans full-stack web apps, automation systems, and internal tooling. I build with Java, Spring Boot, Vue.js, Google Apps Script, and more — always favoring straightforward solutions over engineering for its own sake.
+            My work spans full-stack web apps, automation systems, and internal tooling. I build with Java, Spring Boot, Vue.js, Google Apps Script, and more &mdash; always favoring straightforward solutions over engineering for its own sake.
           </p>
           <div class="about-stats">
             <div class="stat-item">
-              <div class="stat-number">6+</div>
+              <div class="stat-number">7+</div>
               <div class="stat-label">Projects Shipped</div>
             </div>
             <div class="stat-item">
@@ -518,14 +516,14 @@
           class="project-card reveal"
           :class="'d' + (i % 3)"
         >
-          <p class="project-number">Project 0{{ i + 1 }}{{ project.wip ? ' · In Development' : '' }}</p>
+          <p class="project-number">Project 0{{ i + 1 }}{{ project.wip ? ' - In Development' : '' }}</p>
           <h3 class="project-title">{{ project.title }}</h3>
           <p class="project-desc">{{ project.description }}</p>
           <div class="project-tags">
             <span class="tag" v-for="tag in project.tags" :key="tag">{{ tag }}</span>
           </div>
           <div class="project-footer">
-            <span class="project-link-text">View on GitHub →</span>
+            <span class="project-link-text">View on GitHub &rarr;</span>
             <div style="display:flex;align-items:center;gap:0.75rem">
               <a
                 v-if="project.demo"
@@ -534,7 +532,7 @@
                 rel="noopener noreferrer"
                 class="demo-link"
                 @click.stop
-              >Live Demo ↗</a>
+              >Live Demo</a>
               <span class="project-type">{{ project.type }}</span>
             </div>
           </div>
@@ -575,7 +573,7 @@
         <h2 class="contact-heading">Let's Work<br>Together.</h2>
         <p class="contact-sub">Have a project in mind or want to connect? I'd love to hear from you.</p>
         <div class="contact-links">
-          <a href="mailto:jiovinejr@gmail.com" class="btn-primary">Say Hello →</a>
+          <a href="mailto:jiovinejr@gmail.com" class="btn-primary">Say Hello &rarr;</a>
           <a href="https://github.com/jiovinejr" target="_blank" rel="noopener" class="btn-secondary">GitHub</a>
           <a href="https://linkedin.com/in/jiovinejr" target="_blank" rel="noopener" class="btn-secondary">LinkedIn</a>
         </div>
@@ -583,8 +581,8 @@
     </section>
     <div class="divider"></div>
     <footer class="footer">
-      <p>© 2025 James Iovine · Philadelphia, PA</p>
-      <p>Built with Vue.js · GitHub Pages</p>
+      <p>&copy; 2025 James Iovine &middot; Philadelphia, PA</p>
+      <p>Built with Vue.js &middot; GitHub Pages</p>
     </footer>
   </div>
 
@@ -625,8 +623,8 @@
           wip: false
         },
         {
-          title: 'AssetTrack — Equipment Management System',
-          description: 'Internal asset management tool built for a produce warehouse. Equipment is tagged with QR code labels that open a live asset page directly in any phone camera — no app needed. Tracks warranties, service dates, condition, and location. Admin panel handles full CRUD via Firebase Firestore.',
+          title: 'AssetTrack - Equipment Management System',
+          description: 'Internal asset management tool built for a produce warehouse. Equipment is tagged with QR code labels that open a live asset page directly in any phone camera - no app needed. Tracks warranties, service dates, condition, and location. Admin panel handles full CRUD via Firebase Firestore.',
           tags: ['JavaScript', 'HTML/CSS', 'Firebase', 'Firestore', 'Firebase Hosting'],
           link: 'https://github.com/jiovinejr/assettrack',
           demo: 'https://assets.iovine.com/asset/AST-TEST',
@@ -644,7 +642,7 @@
         },
         {
           title: 'Food Prep Labeling System',
-          description: 'Containerized Flask app that generates expiration labels for restaurant food prep. Staff search a live item database, preview a to-scale 2×2 inch label with auto-calculated expiration dates, and can add or edit items on the fly. Rebuilt from a working Google Apps Script production app to demonstrate a portable, version-controlled stack. Deployed on Cloud Run with a self-seeding SQLite database.',
+          description: 'Containerized Flask app that generates expiration labels for restaurant food prep. Staff search a live item database, preview a to-scale 2x2 inch label with auto-calculated expiration dates, and can add or edit items on the fly. Deployed on Cloud Run with a self-seeding SQLite database.',
           tags: ['Python', 'Flask', 'Docker', 'Google Cloud Run', 'SQLite'],
           link: 'https://github.com/jiovinejr/rc-labels',
           demo: 'https://rc-labels-572460024219.us-east1.run.app',
@@ -652,14 +650,14 @@
           wip: false
         },
         {
-          title: 'PokéContainer',
-          description: 'Containerized Flask app that fetches a random Gen 1 Pokémon from the PokéAPI and serves it through a custom frontend. Built to practice the full container workflow — Dockerfile, Google Container Registry, and Cloud Run deployment. CI pipeline runs lint and tests on every push via GitHub Actions.',
+          title: 'PokeContainer',
+          description: 'Containerized Flask app that fetches a random Gen 1 Pokemon from the PokeAPI and serves it through a custom frontend. Built to practice the full container workflow - Dockerfile, Google Container Registry, and Cloud Run deployment. CI pipeline runs lint and tests on every push via GitHub Actions.',
           tags: ['Python', 'Flask', 'Docker', 'Google Cloud Run', 'GitHub Actions', 'REST API'],
           link: 'https://github.com/jiovinejr/poke-container',
           demo: 'https://poke-container-572460024219.us-east1.run.app',
           type: 'Cloud / Container',
           wip: false
-        },
+        }
       ]);
 
       const skillCategories = ref([
