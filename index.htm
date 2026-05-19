@@ -312,7 +312,7 @@
 
     .demo-link:hover { background: var(--accent-dim); }
 
-
+    .project-link-text {
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.68rem;
       color: var(--accent);
@@ -596,7 +596,7 @@
   createApp({
     setup() {
 
-const projects = ref([
+      const projects = ref([
         {
           title: 'Web-Based Order Processing System',
           description: 'Full-stack app modernizing wholesale produce order workflows. Features OAuth2 via Google Cloud, role-based permissions, real-time order updates, automated PDF generation, and planned QuickBooks API integration.',
